@@ -18,6 +18,7 @@ std::
     int x = 25;
     int y = 10;
     int z = 5;
+    int p = 1;
 
     
 cout<<"Please insert the amount of change you have in cents"<<endl;
@@ -28,6 +29,7 @@ cin>> c;
     cout<< "You have " << c / x << " quarters" <<endl;
     cout<< "and " << (c % x) / y << " dimes" <<endl;
     cout<< "and " << ((c % x) % y) / z << " nickles" <<endl;
+    cout<< "and " << (((c % x) % y) % z) / p << " pennies" <<endl;
     
     double a = (c / 100);  //amount total in dollars
     
