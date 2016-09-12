@@ -9,9 +9,9 @@ using namespace std;
 
 int main()
 {
-std::
+
     
-    cout<<"Welcome to coin star, we're here to steal your money."<<endl;
+    
 
  int c = 0;
     
@@ -19,6 +19,8 @@ std::
     int y = 10;
     int z = 5;
     int p = 1;
+    
+    cout<<"Welcome to coin star, we're here to steal your money."<<endl;
 
     
 cout<<"Please insert the amount of change you have in cents"<<endl;
@@ -29,9 +31,9 @@ cin>> c;
     cout<< "You have " << c / x << " quarters" <<endl;
     cout<< "and " << (c % x) / y << " dimes" <<endl;
     cout<< "and " << ((c % x) % y) / z << " nickles" <<endl;
-    cout<< "and " << (((c % x) % y) % z) / p << " pennies" <<endl;
+    cout<< "and " << (((c % x) % y) % z) / p << " pennies." <<endl;
     
-    double a = (c / 100);  //amount total in dollars
+    double a = (c / 100.0);  //amount total in dollars
     
     cout<< "Your total was $" << a  <<endl;
     
