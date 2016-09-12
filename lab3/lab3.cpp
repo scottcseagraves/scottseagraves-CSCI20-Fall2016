@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-std:: 
+ 
 
    string noun1 = "";
    string noun2 = "";

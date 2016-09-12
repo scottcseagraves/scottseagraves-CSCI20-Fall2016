@@ -75,16 +75,37 @@ monster numbertwo;
     cout<< numberthree.Nose<<endl;
     cout<< numberthree.Mouth<<endl;
     
+    
+    string name1  = "";
+    string name2  = "";
+    string name3  = "";
+    string name4  = "";
+    string name5  = "";
+    string name6  = "";
+    
+ 
+    
+    cout<< "Choose a name, head, eyes, ears, nose, and mouth. In that order, pressing enter after each one.";
+    cin>>name1;
+    cin>>name2;
+    cin>>name3;
+    cin>>name4;
+    cin>>name5;
+    cin>>name6;
+    
     cout<< "      "<<endl;
     
       monster numberfour;
+      
     
-    numberfour.Name = "Mark:";
-    numberfour.Head = "Wackus";
-    numberfour.Eyes = "Spritem";
-    numberfour.Ears = "Vegitas";
-    numberfour.Nose = "Spritem";
-    numberfour.Mouth = "Wackus";
+    
+    
+    numberfour.Name = name1;
+    numberfour.Head = name2;
+    numberfour.Eyes = name3;
+    numberfour.Ears = name4;
+    numberfour.Nose = name5;
+    numberfour.Mouth = name6;
     
     cout<< numberfour.Name<<endl;
     cout<< numberfour.Head<<endl;
@@ -93,4 +114,6 @@ monster numbertwo;
     cout<< numberfour.Nose<<endl;
     cout<< numberfour.Mouth<<endl;
      cout<< "      "<<endl;
+     
+     return 0;
 }
