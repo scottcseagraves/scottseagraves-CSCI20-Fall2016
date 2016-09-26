@@ -9,9 +9,9 @@
 using namespace std;
 int main()
 {
-    string name1  = "";
-    string name2  = "";
-    string name3  = "";
+    string firstname  = "";    //defineing varibles
+    string secondname = "";
+    string placeholder = "";
     float g = 0;
     float r = 0;
     float h = 0;
@@ -20,20 +20,20 @@ int main()
     
     
     
-    cout<< "Who do you want to calculate pay for? (First Name)"<<endl;
-    cin>>name1;
+    cout<< "Who do you want to calculate pay for? (First Name)"<<endl;    //user input for wage calculations
+    cin>>firstname;
     cout<< "What is their last name?"<<endl;
-    cin>>name2;
+    cin>>secondname;
     cout<< "What is their hourly wage?"<<endl;
     cin>>r;
     cout<< "How many hours did they work?"<<endl;
     cin>>h;
     cout<< "View wage slip? (y/n)"<<endl;
-    cin>>name2;
+    cin>>placeholder;
     
- g = r * h;
+ g = r * h;                //wage calculations
  n = g * 0.83;
     
-    cout<<"The wage slip for "<< name1 << " "<< name3 << " is as follows. Hours worked = "<< h << ". Rate of pay = $" <<r<< " an hour. Gross income is $"<<g<< ". And the net income is $"<<n<<endl;
+    cout<<"The wage slip for "<< firstname << " "<< secondname << " is as follows. Hours worked = "<< h << ". Rate of pay = $" <<r<< " an hour. Gross income is $"<<g<< ". And the net income is $"<<n<<endl;
     return 0;
 }
