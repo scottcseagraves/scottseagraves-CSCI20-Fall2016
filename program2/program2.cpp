@@ -14,7 +14,7 @@ class DistanceFromMiles {
     
    void SetDistanceAsMeters (double D)     
    {   
-    inputmiles_ = inputmiles_;
+    inputmiles_ = D*0.000621371;
      
    }
 
@@ -27,7 +27,7 @@ class DistanceFromMiles {
  
      void SetDistanceAsYards (double D)     
    {   
-     inputmiles_ = inputmiles_;
+     inputmiles_ = D*0.000568182;
      
    }
 
@@ -67,7 +67,7 @@ class DistanceFromMiles {
  
       void SetDistanceAsInches(double D)           //sets value D
  {
-    inputmiles_ = inputmiles_; 
+    inputmiles_ = D*1.57828e-5; 
  }
 
     double GetDistanceAsInches ()
@@ -146,7 +146,7 @@ int main ()
    {
        cout << "How many meters do you have?" << endl;
        cin>>unit;
-       DistanceFromMiles miles1(unit*0.000621371);
+       DistanceFromMiles miles1(unit);
        miles1.PrintDistance1 ();
        cout<<"Do you want to run again? (y/n)"<<endl;
        cin>>loop;
@@ -155,7 +155,7 @@ int main ()
    {
        cout << "How many yards do you have?" << endl;
        cin>>unit;
-       DistanceFromMiles miles1(unit*0.000568182);
+       DistanceFromMiles miles1(unit);
        miles1.PrintDistance1 ();
        cout<<"Do you want to run again? (y/n)"<<endl;
        cin>>loop;
@@ -164,7 +164,7 @@ int main ()
    {
        cout << "How many inches do you have?" << endl;
        cin>>unit;
-       DistanceFromMiles miles1(unit*1.57828e-5);
+       DistanceFromMiles miles1(unit);
        miles1.PrintDistance1 ();
        cout<<"Do you want to run again? (y/n)"<<endl;
        cin>>loop;
@@ -179,27 +179,4 @@ int main ()
    cout<< "Thanks for using Scott's Unit converter!"<<endl;
  
    return 0;
-   
-//   int main ()
-// {
-//     TemperatureConverter temp1; //testing default constructor
-//     //TemperatureConverter temp2(274); //testing overloaded constructor
-    
-//     temp1.PrintTemperatures();
-//     temp2.PrintTemperatures();
-    
-//     temp1.SetTempFromKelvin(400.15); //testing mutator function
-//     cout<<temp1.GetTempFromKelvin()<<endl;//testing accessor function
-//     temp1.PrintTemperatures();
-    
-//     temp2.SetTempFromCelsius(32); //testing other functions
-//     cout<<temp2.GetTempAsCelsius()<<endl;
-//     temp2.PrintTemperatures();
-    
-//     temp2.SetTempFromFahrenheit(32);
-//     cout<<temp2.GetTempAsFahrenheit()<<endl;
-//     temp2.PrintTemperatures();
-    
-//     return 0;
-// }
 }
