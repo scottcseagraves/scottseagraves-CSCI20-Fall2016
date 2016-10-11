@@ -50,12 +50,7 @@ class taxconvertersingle{
     
     }
  
-    void PrintTaxes ()
- {
-     cout<< "Your return is "<< gettaxes() <<endl;
-     
- }
-    
+
     private:
     
     double income_;
@@ -110,6 +105,12 @@ class taxconvertermarried{
     
 };
 
+    void PrintTaxes ()
+ {
+     cout<< "Your return is "<< gettaxes() <<endl;
+     
+ }
+    
 int main ()
 {
     string rerun = "y";
