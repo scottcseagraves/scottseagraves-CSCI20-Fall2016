@@ -16,9 +16,9 @@ string color = "blue";
 string color1 = "red";
 string color2 = "pink";
 string food_ = "";
-string food = "chocolate frog";
-string food1 = "every flavored jelly beans";
-string food2 = "fizzing whizbees";
+string food = "1";
+string food1 = "2";
+string food2 = "3";
 string animal_ = "";
 string animal = "stag";
 string animal1 = "otter";
@@ -27,9 +27,9 @@ string full_ = "";
 string full = "full";
 string full1 = "half";
 string drink_ = "";
-string drink = "butterbeer";
-string drink1 = "pumpkin juice";
-string drink2 = "unicorn blood";
+string drink = "1";
+string drink1 = "2";
+string drink2 = "3";
 int score = 0;
 
 
@@ -43,10 +43,9 @@ int score = 0;
     
     else (color_ == color2); {
         score --;
-    };
+    }
     
-    cout<<"what is your favorite food? (chocolate frog, every flavored jelly beans, fizzing whizbees)"<<endl;
-    getline(cin, food_);
+    cout<<"what is your favorite food? (chocolate frog = 1, every flavored jelly beans= 2, fizzing whizbees = 3)"<<endl;
     cin>>food_;
     if (food_ == food) { 
     score ++; }
@@ -54,15 +53,15 @@ int score = 0;
         score ++;
     }
     
-    else (food_ == food2); {
+    else if (food_ == food2); {
         score --;
-    };
+    }
     
     cout<<"what would be your patronus? (stag, otter, rabbit)"<<endl;
     cin>>animal_;
     if (animal_ == animal) { 
     score ++;
-    cout<< "Is it a full or half patronus?";                        //nested if statement
+    cout<< "Is it a full or half patronus?"<<endl;                        //nested if statement
         cin>> full_;
         if (full_ == full) {
             score ++;
@@ -70,7 +69,7 @@ int score = 0;
     }
     else if (animal_ == animal1) {
         score ++;
-        cout<< "Is it a full or half patronus?";                        //nested if statement
+        cout<< "Is it a full or half patronus?"<<endl;                        //nested if statement
         cin>> full_;
         if (full_ == full) {
             score ++;
@@ -81,15 +80,15 @@ int score = 0;
         }
     }
     
-    else (animal_ == animal2) ; {
+    else if (animal_ == animal2)  {
         score --;
-        cout<< "Is it a full or half patronus?";                        //nested if statement
+        cout<< "Is it a full or half patronus?"<<endl;                        //nested if statement
         cin>> full_;
         if (full_ == full) {
             score ++;}
-    }};
+    }}
     
-    cout<<"what is your favorite drink? (butterbeer, pumpkin juice, unicorn blood)"<<endl;
+    cout<<"what is your favorite drink? (butterbeer = 1, pumpkin juice = 2, unicorn blood = 3)"<<endl;
     getline(cin, drink_);
     cin>>drink_;
     if (drink_ == drink) { 
@@ -99,7 +98,7 @@ int score = 0;
         score;
     }
     
-    else (drink_ == drink2) ; {
+    else if (drink_ == drink2) ; {
         ;
     }
     
