@@ -99,7 +99,7 @@ int score = 0;
     }
     
     else if (drink_ == drink2) ; {
-        ;
+        score = 99;;
     }
     
     

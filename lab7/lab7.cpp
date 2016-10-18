@@ -1,6 +1,6 @@
 //Scott Seagraves
 //9/19/2016
-//ASCII ART with added function 
+// 
 
 #include <iostream>
 #include <string>
