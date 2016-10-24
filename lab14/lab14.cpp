@@ -31,8 +31,7 @@
  if (grade<minimum && grade!=-1) {
  minimum = grade;  } 
  }         // Output results      
- cout<< total;
- cout<< count;
+
  
  double average = total / count;      
  cout << "Average was " << average << endl;      
